@@ -1,0 +1,120 @@
+@font-face {
+  font-family: Inter-Regular;
+  src: url(../fonts/static/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: Inter-SemiBold;
+  src: url(../fonts/static/Inter-SemiBold.ttf);
+}
+@font-face {
+  font-family: Inter-Bold;
+  src: url(../fonts/static/Inter-Bold.ttf);
+}
+
+:root {
+  --Primary-color: hsl(350, 56%, 40%);
+  --Neutral-White: hsl(0, 0%, 100%);
+  --Neutral-Grey: hsl(0, 0%, 20%);
+  --Neutral-darkGrey: hsl(0, 0%, 12%);
+  --Neutral-offBlack: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  background-color: var(--Neutral-offBlack);
+  color: var(--Neutral-White);
+  text-align: center;
+}
+
+main {
+  max-width: 1440px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 18px;
+  color: var(--Neutral-White);
+}
+
+main .main-content {
+  background-color: var(--Neutral-darkGrey);
+  padding: 28px 32px;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+.intro-section {
+  line-height: 2rem;
+}
+
+.intro-section .avatar {
+  height: 94px;
+  width: 94px;
+  border-radius: 50%;
+  border: 2px solid var(--Primary-color);
+}
+
+.intro-section h3 {
+  font-family: Inter-Bold;
+}
+
+.intro-section .location {
+  color: var(--Primary-color);
+  font-family: Inter-SemiBold;
+}
+
+.intro-section .profession {
+  font-family: Inter-Regular;
+  margin: 8px 0 0;
+}
+
+.social-media-section {
+  margin: 18px auto 0;
+  width: 18rem;
+}
+
+.social-media-section a {
+  display: block;
+  background-color: var(--Neutral-Grey);
+  margin: 18px 0;
+  padding: 12px 0;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--Neutral-White);
+  background-color: var(--Neutral-Grey);
+  font-family: Inter-SemiBold;
+}
+
+.social-media-section a:active,
+.social-media-section a:hover {
+  background-color: var(--Primary-color);
+  color: var(--Neutral-offBlack);
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+footer {
+  margin: 8px 0;
+  color: var(--Neutral-White);
+}
+
+.attribution {
+  font-size: 11px;
+  font-family: Inter-Regular;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 425px) {
+  main {
+    max-width: 375px;
+  }
+}
